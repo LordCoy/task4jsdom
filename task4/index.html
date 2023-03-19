@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+      <div id="add">
+        <button id="btnAdd" style="border-radius:10px ;">add</button>
+      </div>
+      <div class="search">
+      <input type="text" style="border-radius: 10px;" id="searchInput"placeholder="Search..." />
+      </div>
+      <!-- <button id="searchBtn">search</button> -->
+    </div>
+    <div id="form" class="hidden">
+      <form id="form-body" class="card-form">
+        <p class="title">Input your Profile</p>
+        <hr />
+        <p for="name">Select your picture</p>
+        <input
+          type="file"
+          name="name"
+          id="gambar"
+          accept=".jpg, .jpeg, .png"
+          multiple
+        />
+        <p for="name">Name</p>
+        <input type="text" 
+          name="name" 
+          id="name" 
+          placeholder="Insert your Name" 
+          required/>
+          <p for="alamat">Address</p>
+        <input
+          type="text"
+          name="alamat"
+          id="alamat"
+          placeholder="Insert your Address"
+          required
+        />
+        <p for="keterangan">Study</p>
+        <input
+          type="text"
+          name="keterangan"
+          id="keterangan"
+          placeholder="Study"
+          required
+        />
+        <hr style="margin-top: 40px;"/>
+        <button type="button" id="btn">Submit</button>
+        <button type="button" id="close">Cancel</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <div id="tampilan"> </div>
+    <script src="./js/main.js"></script>
+
+    
+</body>
+</html>
